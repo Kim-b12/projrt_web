@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Galerie des images et vidéos de l'École Supérieure d'Informatique. Découvrez les bâtiments, les étudiants, la bibliothèque, et le laboratoire.">
+    <title>Galerie - ESI</title>
+    <link rel="stylesheet" href="galerie.css">
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const menuToggle = document.querySelector('.menu-toggle');
+            const navbar = document.querySelector('.navbar');
+    
+            menuToggle.addEventListener('click', () => {
+                navbar.classList.toggle('active');
+                menuToggle.classList.toggle('active');
+            });
+        });
+    </script>
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <img src="logo.jpg" alt="Le logo de l'ESI" class="logo">
+            <button class="menu-toggle" aria-label="Menu">
+                <div class="menu-icon"></div>
+            </button>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="Page_acceuil.html">Accueil</a></li>
+                    <li><a href="Page_Academie.html">Académie</a></li>
+                    <li><a href="Page_Admission.html">Admission</a></li>
+                    <li><a href="Page_galerie.html">Galerie</a></li>
+                </ul>
+            </nav>
+        </div>
+        <section class="hero">
+            <h1>Une petite vue d'ensemble de l'École Supérieure d'Informatique</h1>
+        </section>
+    </header>
+
+    <main class="gallery">
+        <section class="gallery-section">
+            <h2>Images des bâtiments</h2>
+            <div class="gallery-grid">
+                <img src="vue1.jpeg" alt="Image de l'école 1">
+                <img src="vue2.jpeg" alt="Image de l'école 2">
+                <img src="vue3.jpeg" alt="Image de l'école 3">
+                <img src="bloc.jpg" alt="Image de l'école 4">
+                <img src="tc2.jpeg" alt="Image de l'école 5">
+                <img src="vue4.jpeg" alt="Image de l'école 6">
+            </div>
+        </section>
+
+        <section class="gallery-section">
+            <h2>Images des Étudiants</h2>
+            <div class="gallery-grid">
+                <div class="video-container">
+                    <video src="etudianvd.mp4" autoplay muted loop playsinline></video>
+                </div>
+                <div class="video-container">
+                    <video src="etudianvd1.mp4" autoplay muted loop playsinline></video>
+                </div>
+                <img src="salle1.jpeg" alt="Image des étudiants 1">
+                <img src="salle2.jpeg" alt="Image des étudiants 2">
+                <img src="etudiants.jpeg" alt="Image des étudiants 3">
+                <img src="etudiant1.jpeg" alt="Image des étudiants 4">
+                <img src="etu4.jpeg" alt="Image des étudiants 5">
+                <img src="etu3.jpeg" alt="Image des étudiants 6">
+                <img src="etu2.jpeg" alt="Image des étudiants 7">
+                <img src="etu1.jpeg" alt="Image des étudiants 8">
+            </div>
+        </section>
+
+        <section class="gallery-section">
+            <h2>Images de la Bibliothèque</h2>
+            <div class="gallery-grid">
+                <div class="video-container">
+                    <video src="biblovd.mp4" autoplay muted loop playsinline></video>
+                </div>
+                <img src="image1.jpg" alt="Image de la bibliothèque 1">
+                <img src="image2.jpg" alt="Image de la bibliothèque 2">
+                <img src="image3.jpg" alt="Image de la bibliothèque 3">
+                <img src="image4.jpg" alt="Image de la bibliothèque 4">
+            </div>
+        </section>
+
+        <section class="gallery-section">
+            <h2>Images du Laboratoire</h2>
+            <div class="gallery-grid">
+                <div class="video-container">
+                    <video src="labo.mp4" autoplay muted loop playsinline></video>
+                </div>
+                <img src="image5.jpg" alt="Image du laboratoire 1">
+                <img src="image6.jpg" alt="Image du laboratoire 2">
+                <img src="jc.jpg" alt="Image du laboratoire 3">
+                <img src="image7.jpg" alt="Image du laboratoire 4">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 École Supérieure d'Informatique (ESI). Tous droits réservés.</p>
+    </footer>
+</body>
+</html>

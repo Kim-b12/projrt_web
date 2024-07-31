@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Licence en Informatique - Option Réseaux et Systèmes (RS)</title>
+    <link rel="stylesheet" href="cours-deseign.css">
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const menuToggle = document.querySelector('.menu-toggle');
+            const navbar = document.querySelector('.navbar');
+    
+            menuToggle.addEventListener('click', () => {
+                navbar.classList.toggle('active');
+                menuToggle.classList.toggle('active');
+            });
+        });
+    </script>
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <img src="logo.jpg" alt="Le logo de l'ESI" class="logo">
+            <button class="menu-toggle">
+                <span class="menu-icon"></span>
+            </button>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="Page_acceuil.html">Accueil</a></li>
+                    <li><a href="Page_Academie.html">Académie</a></li>
+                    <li><a href="Page_Admission.html">Admission</a></li>
+                    <li><a href="Page_galerie.html">Galerie</a></li>
+                </ul>
+            </nav>
+        </div>
+        <section class="hero">
+            <h1>Option Réseaux et Systèmes (RS)</h1>
+            <p>Un avenir radieux commence ici</p>
+        </section>
+    </header>
+
+    <main>
+        <section class="course-details">
+            <h1>Licence en Informatique - Option Réseaux et Systèmes (RS)</h1>
+            <p><strong>Description :</strong> L'option Réseaux et Systèmes prépare les étudiants à maîtriser la conception, la gestion et la sécurisation des réseaux informatiques. Les cours couvrent une variété de sujets allant des bases des réseaux à la virtualisation avancée et la sécurité des systèmes.</p>
+            
+            <h2>Objectifs de la Formation</h2>
+            <ul>
+                <li>Acquérir une compréhension approfondie des réseaux informatiques et des systèmes.</li>
+                <li>Développer des compétences en gestion et administration des réseaux.</li>
+                <li>Apprendre à sécuriser les infrastructures réseau contre les menaces potentielles.</li>
+                <li>Maîtriser les outils et techniques de virtualisation et de cloud computing.</li>
+            </ul>
+
+            <h2>Contenu du Cours</h2>
+            <ul>
+                <li>Introduction aux Réseaux Informatiques</li>
+                <li>Administration des Réseaux</li>
+                <li>Sécurité des Réseaux</li>
+                <li>Systèmes d’Exploitation Réseau</li>
+                <li>Conception des Réseaux</li>
+                <li>Virtualisation et Cloud Computing</li>
+                <li>Gestion de Projet en Réseaux</li>
+                <li>Technologies de Communication Avancées</li>
+                <li>Support Technique et Dépannage</li>
+                <li>Administration des Bases de Données</li>
+            </ul>
+
+            <h2>Débouchés Professionnels</h2>
+            <p>Les diplômés de l'option Réseaux et Systèmes peuvent accéder à des postes tels que administrateur réseau, ingénieur systèmes, consultant en sécurité réseau, ou spécialiste en virtualisation et cloud computing dans divers secteurs comme les entreprises, les fournisseurs de services informatiques, et les administrations publiques.</p>
+
+            <h2>Enseignants</h2>
+            <div class="teacher">
+                <img src="enseignant1.jpg" alt="Photo de Pr Tiguane YELEMOU" class="teacher-photo">
+                <div class="teacher-info">
+                    <h3>Pr Tiguane YELEMOU</h3>
+                    <p><strong>Expert en réseaux et systèmes informatiques</strong></p>
+                    <p>Pr Tiguane YELEMOU est un spécialiste en réseaux et systèmes d'information avec plus de 20 ans d'expérience dans l'enseignement et le développement de solutions logicielles. Il a publié plusieurs articles sur les réseaux et systèmes d'information.</p>
+                </div>
+            </div>
+
+            <div class="teacher">
+                <img src="enseignant2.jpg" alt="Photo de Mr Edem AGBEZOUTSI" class="teacher-photo">
+                <div class="teacher-info">
+                    <h3>Mr Edem AGBEZOUTSI</h3>
+                    <p><strong>Spécialiste en réseaux et systèmes informatiques</strong></p>
+                    <p>Mr Edem AGBEZOUTSI possède une vaste expérience en analyse des besoins et gestion de projets informatiques. Il a travaillé dans diverses entreprises avant de rejoindre l'ESI et est passionné par l'innovation en gestion des projets informatiques.</p>
+                </div>
+            </div>
+
+            <h2>Calendrier des Cours</h2>
+            <table class="course-schedule">
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Heure</th>
+                        <th>Cours</th>
+                        <th>Enseignant</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>01/09/2024</td>
+                        <td>09:00 - 12:00</td>
+                        <td>Routage IP</td>
+                        <td>Pr Tiguane YELEMOU</td>
+                    </tr>
+                    <tr>
+                        <td>03/09/2024</td>
+                        <td>14:00 - 17:00</td>
+                        <td>Modèle TCP/IP</td>
+                        <td>Mr Edem AGBEZOUTSI</td>
+                    </tr>
+                    <!-- Ajoute d'autres lignes pour les autres cours -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 École Supérieure d'Informatique (ESI). Tous droits réservés.</p>
+    </footer>
+</body>
+</html>

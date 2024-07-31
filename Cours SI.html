@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Licence en Informatique - Option Système d’Information (SI)</title>
+    <link rel="stylesheet" href="cours-deseign.css">
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const menuToggle = document.querySelector('.menu-toggle');
+            const navbar = document.querySelector('.navbar');
+    
+            menuToggle.addEventListener('click', () => {
+                navbar.classList.toggle('active');
+                menuToggle.classList.toggle('active');
+            });
+        });
+    </script>
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <img src="logo.jpg" alt="Le logo de l'ESI" class="logo">
+            <button class="menu-toggle" aria-label="Menu">
+                <div class="menu-icon"></div>
+            </button>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="Page_acceuil.html">Accueil</a></li>
+                    <li><a href="Page_Academie.html">Académie</a></li>
+                    <li><a href="Page_Admission.html">Admission</a></li>
+                    <li><a href="Page_galerie.html">Galerie</a></li>
+                </ul>
+            </nav>
+        </div>
+        <section class="hero">
+            <h1>Option Systèmes d'information (SI)</h1>
+            <p>Un avenir radieux commence ici</p>
+        </section>
+    </header>
+    <main>
+        <section class="course-details">
+            <h1>Licence en Informatique - Option Système d’Information (SI)</h1>
+            <p><strong>Description :</strong> Cette option forme les étudiants aux fondamentaux des systèmes d'information, y compris la gestion des bases de données, le développement des logiciels, et la gestion de projets informatiques. Les cours sont conçus pour fournir des compétences pratiques et théoriques dans la conception et la gestion des systèmes d'information.</p>
+            
+            <h2>Objectifs de la Formation</h2>
+            <ul>
+                <li>Comprendre les principes de base des systèmes d'information.</li>
+                <li>Acquérir des compétences en gestion des bases de données.</li>
+                <li>Développer des applications et des solutions informatiques adaptées aux besoins des organisations.</li>
+                <li>Gérer des projets informatiques efficacement.</li>
+            </ul>
+
+            <h2>Contenu du Cours</h2>
+            <ul>
+                <li>Introduction aux Systèmes d'Information</li>
+                <li>Gestion des Bases de Données</li>
+                <li>Développement d'Applications</li>
+                <li>Gestion de Projet Informatique</li>
+                <li>Analyse et Conception des Systèmes</li>
+            </ul>
+
+            <h2>Débouchés Professionnels</h2>
+            <p>Les diplômés de cette option peuvent travailler comme analystes de systèmes, développeurs d'applications, chefs de projet informatique, ou consultants en systèmes d'information dans divers secteurs tels que les entreprises, les administrations publiques, et les sociétés de services informatiques.</p>
+            <h2>Enseignants</h2>
+            <div class="teacher">
+                <img src="prof4.jpeg" alt="Photo de Dr. Abdoul Azize KINDO" class="teacher-photo">
+                <div class="teacher-info">
+                    <h3>Dr Abdoul Azize KINDO</h3>
+                    <p><strong>Expert en Systèmes d'Information et Bases de Données</strong></p>
+                    <p>Dr Abdoul Azize KINDO est un Enseignant-chercheur à l'ESI spécialisé dans le développement web et mobile.</p>
+                </div>
+            </div>
+    
+            <div class="teacher">
+                <img src="prof1.jpeg" alt="Photo de PR Sadouanouan MALO" class="teacher-photo">
+                <div class="teacher-info">
+                    <h3>PR Sadouanouan MALO</h3>
+                    <p><strong>Spécialiste en systèmes informatiques</strong></p>
+                    <p>PR Sadouanouan MALO est un spécialiste en systèmes d'information avec plus de 20 ans d'expérience dans l'enseignement et le développement de solutions logicielles. Il a publié plusieurs articles sur les bases de données et la gestion des systèmes d'information.</p>
+                </div>
+            </div>
+            <h2>Calendrier des Cours</h2>
+            <table class="course-schedule">
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Heure</th>
+                        <th>Cours</th>
+                        <th>Enseignant</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>01/09/2024</td>
+                        <td>09:00 - 12:00</td>
+                        <td>Développement web</td>
+                        <td>Dr Abdoul Azize KINDO</td>
+                    </tr>
+                    <tr>
+                        <td>03/09/2024</td>
+                        <td>14:00 - 17:00</td>
+                        <td>Programmation C</td>
+                        <td>PR Sadouanouan MALO</td>
+                    </tr>
+                    <!-- Ajoute d'autres lignes pour les autres cours -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Ecole Supérieure d'Informatique (ESI). Tous droits réservés.</p>
+    </footer>
+</body>
+</html>

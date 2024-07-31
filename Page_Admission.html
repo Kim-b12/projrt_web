@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Page d'admission de l'École Supérieure d'Informatique. Découvrez les étapes d'admission et remplissez le formulaire de préinscription.">
+    <title>ESI 2.0 - Admission</title>
+    <link rel="stylesheet" href="deseigne2.css">
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const menuToggle = document.querySelector('.menu-toggle');
+            const navbar = document.querySelector('.navbar');
+
+            menuToggle.addEventListener('click', () => {
+                navbar.classList.toggle('active');
+                menuToggle.classList.toggle('active');
+            });
+        });
+    </script>
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <img src="logo.jpg" alt="Le logo de l'ESI" class="logo">
+            <button class="menu-toggle" aria-label="Menu">
+                <span class="menu-icon"></span>
+            </button>
+            <nav class="navbar" aria-label="Navigation principale">
+                <ul>
+                    <li><a href="Page_acceuil.html">Accueil</a></li>
+                    <li><a href="Page_Academie.html">Académie</a></li>
+                    <li><a href="Page_Admission.html">Admission</a></li>
+                    <li><a href="Page_galerie.html">Galerie</a></li>
+                </ul>
+            </nav>
+        </div>
+        <section class="hero">
+            <h1>Admission à l'Ecole Supérieure d'Informatique</h1>
+            <p>Rejoignez-nous pour une carrière brillante en informatique</p>
+            <a href="Page_Academie.html" class="cta-button">Découvrez nos programmes</a>
+        </section>
+    </header>
+
+    <main>
+        <section class="admission-info">
+            <h2>Procédure d'Admission</h2>
+            <p>Pour rejoindre l'École Supérieure d'Informatique, veuillez suivre les étapes ci-dessous :</p>
+            <ol>
+                <li>Remplir le formulaire de préinscription en ligne.</li>
+                <li>Envoyer vos documents requis (CV, lettre de motivation, diplômes) à notre bureau d'admission.</li>
+                <li>Passer l'entretien de sélection avec notre équipe académique.</li>
+                <li>Recevoir la décision d'admission et suivre les instructions pour finaliser votre inscription.</li>
+            </ol>
+        </section>
+
+        <section class="requirements">
+            <h2>Exigences</h2>
+            <p>Les candidats doivent répondre aux critères suivants pour être considérés pour l'admission :</p>
+            <ul>
+                <li>Un diplôme de niveau secondaire ou équivalent.</li>
+                <li>Une passion pour les technologies et l'informatique.</li>
+                <li>Une bonne maîtrise de la langue anglaise ou française.</li>
+            </ul>
+        </section>
+
+        <section class="faq">
+            <h2>Questions Fréquemment Posées</h2>
+            <div class="faq-item">
+                <h3>Quels documents sont nécessaires pour la préinscription ?</h3>
+                <p>Les documents requis incluent votre CV, une lettre de motivation, et des copies de vos diplômes.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Y a-t-il un test d'entrée ?</h3>
+                <p>Il y a un test d'entrée. Vous serez évalué en anglais, français (résumé de texte), physique et deux épreuves de mathématiques.</p>
+            </div>
+        </section>
+
+        <section class="pre-registration">
+            <h2>Formulaire de Préinscription</h2>
+            <form action="Page_felicitation.html" method="post">
+                <div class="form-group">
+                    <label for="full-name">Nom Complet :</label>
+                    <input type="text" id="full-name" name="full_name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Adresse Email :</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Numéro de Téléphone :</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message ou Lettre de Motivation :</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="cta-button">Soumettre</button>
+            </form>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Ecole Supérieure d'Informatique (ESI). Tous droits réservés.</p>
+    </footer>
+</body>
+</html>

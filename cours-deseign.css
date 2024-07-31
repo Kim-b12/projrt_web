@@ -1,0 +1,314 @@
+
+/* Réinitialisation des styles et styles de base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+/* Header */
+.header {
+    position: relative;
+    height: 100vh;
+    background: url('bloc.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header-content {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.logo {
+    max-width: 150px;
+    height: auto;
+}
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    position: relative;
+}
+
+.menu-icon, .menu-icon::before, .menu-icon::after {
+    content: '';
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    position: absolute;
+    transition: 0.3s ease;
+}
+
+.menu-icon {
+    position: relative;
+}
+
+.menu-icon::before {
+    top: -10px;
+}
+
+.menu-icon::after {
+    top: 10px;
+}
+
+.menu-toggle.active .menu-icon {
+    background-color: transparent;
+}
+
+.menu-toggle.active .menu-icon::before {
+    transform: rotate(45deg);
+}
+
+.menu-toggle.active .menu-icon::after {
+    transform: rotate(-45deg);
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar ul li {
+    margin: 0;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    color: #ffd700;
+}
+
+.hero {
+    margin-top: 70px; /* Ajuste la marge pour compenser la hauteur de l'en-tête */
+    text-align: center;
+    padding: 20px;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin: 0;
+    animation: fadeIn 2s ease-out;
+}
+
+.hero p {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    color: #fff;
+    background-color: #0056b3;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #003d7a;
+    transform: scale(1.05);
+}
+
+/* Main Content */
+main {
+    padding: 20px;
+}
+
+.course-details h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.course-details h2 {
+    font-size: 2em;
+    margin-top: 20px;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 5px;
+}
+
+.course-details ul {
+    list-style: disc;
+    margin-left: 20px;
+}
+
+.teacher {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.teacher-photo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 20px;
+    object-fit: cover;
+}
+
+.teacher-info h3 {
+    color: #0056b3;
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.teacher-info p {
+    margin: 5px 0;
+}
+
+.course-schedule {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.course-schedule th, .course-schedule td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.course-schedule th {
+    background-color: #f4f4f4;
+}
+
+/* Footer */
+footer {
+    background-color: #0056b3;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo {
+        max-width: 120px;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .navbar {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background: #0056b3;
+        padding: 20px;
+        border-radius: 5px;
+        width: 200px;
+        gap: 10px;
+        z-index: 1000;
+    }
+
+    .navbar.active {
+        display: flex;
+    }
+
+    .navbar ul {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .menu-icon {
+        background-color: #0056b3;
+    }
+
+    .menu-icon::before,
+    .menu-icon::after {
+        background-color: #0056b3;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        max-width: 80px;
+    }
+
+    .hero h1 {
+        font-size: 1.5em;
+    }
+
+    .hero p {
+        font-size: 0.9em;
+    }
+
+    .cta-button {
+        font-size: 0.9em;
+        padding: 8px 16px;
+    }
+
+    .teacher-photo {
+        width: 80px;
+        height: 80px;
+    }
+
+    .teacher-info h3 {
+        font-size: 1.2em;
+    }
+
+    .course-details h1 {
+        font-size: 2em;
+    }
+
+    .course-details h2 {
+        font-size: 1.5em;
+    }
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ESI 2.0 - Académie</title>
+    <link rel="stylesheet" href="deseigne1.css">
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const menuToggle = document.querySelector('.menu-toggle');
+            const navbar = document.querySelector('.navbar');
+    
+            menuToggle.addEventListener('click', () => {
+                navbar.classList.toggle('active');
+                menuToggle.classList.toggle('active');
+            });
+        });
+    </script>
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <img src="logo.jpg" alt="Le logo de l'ESI" class="logo">
+            <button class="menu-toggle">
+                <div class="menu-icon"></div>
+            </button>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="Page_acceuil.html">Accueil</a></li>
+                    <li><a href="Page_Academie.html">Académie</a></li>
+                    <li><a href="Page_Admission.html">Admission</a></li>
+                    <li><a href="Page_galerie.html">Galerie</a></li>
+                </ul>
+            </nav>
+        </div>
+        <section class="hero">
+            <h1>Département Académique</h1>
+            <p>Explorez nos formations et spécialisations</p>
+        </section>
+    </header>
+
+    <main>
+        <section class="programs">
+            <article>
+                <h2>Département de la Licence en Informatique (BAC+3)</h2>
+                <ul>
+                    <li>
+                        <strong>Option Système d’Information (SI)</strong> - 
+                        <a href="Cours SI.html">Cours SI</a>
+                    </li>
+                    <li>
+                        <strong>Option Réseaux et Systèmes (RS)</strong> - 
+                        <a href="Cours RS.html">Cours RS</a>
+                    </li>
+                </ul>
+            </article>
+
+            <article>
+                <h2>Département du Master en Informatique (BAC+5)</h2>
+                <ul>
+                    <li>
+                        <strong>Option SI parcours Système d’Aide à la Décision (SAD)</strong> - 
+                        <a href="Cours SAD.html">Cours SAD</a>
+                    </li>
+                    <li>
+                        <strong>Option cybersécurité</strong> - 
+                        <a href="Cours Cybersécurité.html">Cours cybersécurité</a>
+                    </li>
+                    <li>
+                        <strong>Option Sciences de Données</strong> - 
+                        <a href="Cours SD.html">Cours SD</a>
+                    </li>
+                </ul>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Ecole Supérieure d'Informatique (ESI). Tous droits réservés.</p>
+    </footer>
+</body>
+</html>

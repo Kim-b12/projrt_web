@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bienvenue à l'École Supérieure d'Informatique (ESI). Découvrez nos programmes, notre équipe et nos services de formation en informatique.">
+    <meta name="author" content="ESI">
+    <title>ESI 2.0 - Accueil</title>
+    <link rel="stylesheet" href="deseigne.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-content">
+            <img src="logo.jpg" alt="Le logo de l'ESI" class="logo">
+            <button class="menu-toggle" aria-label="Menu">
+                <span class="menu-icon"></span>
+            </button>
+            <nav class="navbar" aria-label="Navigation principale">
+                <ul>
+                    <li><a href="Page_acceuil.html">Accueil</a></li>
+                    <li><a href="Page_Academie.html">Académie</a></li>
+                    <li><a href="Page_Admission.html">Admission</a></li>
+                    <li><a href="Page_galerie.html">Galerie</a></li>
+                </ul>
+            </nav>
+        </div>
+        <section class="hero">
+            <h1>Bienvenue à l'Ecole Supérieure d'Informatique</h1>
+            <p>Un avenir radieux commence ici</p>
+            <a href="Page_Academie.html" class="cta-button">Découvrez nos programmes</a>
+        </section>
+    </header>
+
+    <main>
+        <section class="about">
+            <h2>Qui sommes-nous ?</h2>
+            <p>L'École Supérieure d'Informatique (ESI) est un établissement de premier plan dédié à la formation de spécialistes en informatique.</p>
+            <p>Nous offrons des programmes de formation qui combinent théorie et pratique pour répondre aux besoins du marché du travail.</p>
+            <p>L’Ecole Supérieure d’Informatique (ESI) est née en 1991 du besoin exprimé par le Premier Plan Directeur Informatique (1991-1995) « édification de compétences nationales par la formation de spécialistes (analystes et ingénieurs) concepteurs de système d’information ».</p>
+            <p>D’abord implantée à Ouagadougou, l’ESI a ensuite été installée au sein de l’Université Polytechnique de Bobo-Dioulasso en septembre 1995.</p>
+            <p>Elle bénéficie du soutien de la Délégation Générale à l’Informatique (DELGI, de la Coopération Française, de l’Association for Welfare in Africa (AWA International) et de l’ONG irlandaise APSO.</p>
+        </section>
+
+        <section class="team">
+            <h2>Notre Équipe de Direction</h2>
+            <div class="team-member">
+                <img src="image8.jpg" alt="Directeur" class="team-photo">
+                <div class="team-info">
+                    <h3>Dr Borli Michel Jonas SOME</h3>
+                    <p><strong>Directeur</strong></p>
+                    <p>Michel Jonas SOME est un leader visionnaire avec plus de 20 ans d'expérience dans le domaine de l'informatique. Sa passion pour l'innovation et l'excellence académique fait avancer notre école.</p>
+                </div>
+            </div>
+            <div class="team-member">
+                <img src="da.jpeg" alt="Directrice" class="team-photo">
+                <div class="team-info">
+                    <h3>Dr Joelle Anasthasie OUATTARA dit Mme COMPAORE</h3>
+                    <p><strong>Directrice Adjointe</strong></p>
+                    <p>Joelle Anasthasie OUATTARA apporte son expertise en gestion et son dévouement à la formation des futurs professionnels. Sa vision stratégique contribue à l'évolution continue de nos programmes.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="services">
+            <div class="service">
+                <h3>Formations Innovantes</h3>
+                <p>Des cursus adaptés aux évolutions technologiques pour garantir une formation de qualité.</p>
+            </div>
+            <div class="service">
+                <h3>Partenariats Stratégiques</h3>
+                <p>Des collaborations avec des entreprises de renom pour des stages et des opportunités professionnelles.</p>
+            </div>
+            <div class="service">
+                <h3>Excellence Académique</h3>
+                <p>Un corps professoral expérimenté et des infrastructures modernes pour une expérience éducative exceptionnelle.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Ecole Supérieure d'Informatique (ESI). Tous droits réservés.</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const menuToggle = document.querySelector('.menu-toggle');
+            const navbar = document.querySelector('.navbar');
+    
+            menuToggle.addEventListener('click', () => {
+                navbar.classList.toggle('active');
+                menuToggle.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+
+</html>

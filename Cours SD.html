@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Master en Informatique - Option Sciences de Données</title>
+    <link rel="stylesheet" href="cours-deseign.css">
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const menuToggle = document.querySelector('.menu-toggle');
+            const navbar = document.querySelector('.navbar');
+    
+            menuToggle.addEventListener('click', () => {
+                navbar.classList.toggle('active');
+                menuToggle.classList.toggle('active');
+            });
+        });
+    </script>
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <img src="logo.jpg" alt="Le logo de l'ESI" class="logo">
+            <nav class="navbar">
+                <ul>
+                    <li><a href="Page_acceuil.html">Accueil</a></li>
+                    <li><a href="Page_Academie.html">Académie</a></li>
+                    <li><a href="Page_Admission.html">Admission</a></li>
+                    <li><a href="Page_galerie.html">Galerie</a></li>
+                </ul>
+            </nav>
+        </div>
+        <section class="hero">
+            <h1>Option Sciences de Données</h1>
+            <p>Un avenir radieux commence ici</p>
+        </section>
+    </header>
+
+    <main>
+        <section class="course-details">
+            <h1>Master en Informatique - Option Sciences de Données</h1>
+            <p><strong>Description :</strong> Le parcours Sciences de Données offre une formation complète sur l'analyse des données, la gestion des grands ensembles de données, et l'utilisation des outils modernes pour extraire des insights utiles. Les étudiants apprennent à appliquer des techniques statistiques et d'apprentissage automatique pour résoudre des problèmes complexes.</p>
+            
+            <h2>Objectifs de la Formation</h2>
+            <ul>
+                <li>Acquérir des compétences solides en analyse et gestion des données.</li>
+                <li>Maîtriser les outils de programmation et les techniques d'apprentissage automatique.</li>
+                <li>Développer des compétences en visualisation et communication des résultats de l'analyse des données.</li>
+                <li>Comprendre les enjeux éthiques liés à la science des données et la gestion de la confidentialité.</li>
+            </ul>
+
+            <h2>Contenu du Cours</h2>
+            <ul>
+                <li>Introduction à la Science des Données</li>
+                <li>Statistiques et Analyse des Données</li>
+                <li>Programmation pour la Science des Données</li>
+                <li>Gestion et Nettoyage des Données</li>
+                <li>Exploration et Visualisation des Données</li>
+                <li>Apprentissage Automatique (Machine Learning)</li>
+                <li>Intelligence Artificielle et Big Data</li>
+                <li>Éthique et Confidentialité des Données</li>
+                <li>Projets de Science des Données</li>
+                <li>Outils et Technologies pour la Science des Données</li>
+            </ul>
+
+            <h2>Débouchés Professionnels</h2>
+            <p>Les diplômés de ce parcours sont prêts à occuper des postes tels que data scientist, analyste de données, ingénieur en apprentissage automatique, consultant en science des données, ou spécialiste en intelligence artificielle dans divers secteurs comme la finance, la santé, le commerce, et les technologies.</p>
+            <h2>Enseignants</h2>
+            <div class="teacher">
+                <img src="prof3.jpeg" alt="Photo de Dr. Issa Bationo" class="teacher-photo">
+                <div class="teacher-info">
+                    <h3>Dr. Issa Bationo</h3>
+                    <p><strong>Expert en Systèmes d'Information et Bases de Données</strong></p>
+                    <p>Enseignant et chercheur à l'ESI, Dr. Bationo travaille sur les aspects du Big Data et de l'analyse avancée des données, et il joue un rôle clé dans l'élaboration des programmes de formation en science des données.</p>
+                </div>
+            </div>
+
+            <div class="teacher">
+                <img src="prof4.jpeg" alt="Photo de Dr. Abdoulaye Yacouba" class="teacher-photo">
+                <div class="teacher-info">
+                    <h3>Dr. Abdoulaye Yacouba</h3>
+                    <p><strong>Spécialiste en Analyse des données</strong></p>
+                    <p> Enseignant-chercheur au sein de l’UNB, Dr. Yacouba est impliqué dans les cours et les projets de recherche liés à l'analyse des données et aux systèmes d'information.</p>
+                </div>
+            </div>
+            <h2>Calendrier des Cours</h2>
+            <table class="course-schedule">
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Heure</th>
+                        <th>Cours</th>
+                        <th>Enseignant</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>01/09/2024</td>
+                        <td>09:00 - 12:00</td>
+                        <td>Analyse des données</td>
+                        <td>Dr. Issa Bationo</td>
+                    </tr>
+                    <tr>
+                        <td>03/09/2024</td>
+                        <td>14:00 - 17:00</td>
+                        <td>Apprentissage Automatique</td>
+                        <td>Dr. Abdoulaye Yacouba</td>
+                    </tr>
+                    <!-- Ajoute d'autres lignes pour les autres cours -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Ecole Supérieure d'Informatique (ESI). Tous droits réservés.</p>
+    </footer>
+</body>
+</html>
